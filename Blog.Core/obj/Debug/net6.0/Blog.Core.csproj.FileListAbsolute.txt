@@ -1,0 +1,12 @@
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\bin\Debug\net6.0\Blog.Core.deps.json
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\bin\Debug\net6.0\Blog.Core.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\bin\Debug\net6.0\Blog.Core.pdb
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\Blog.Core.csproj.AssemblyReference.cache
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\Blog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\Blog.Core.AssemblyInfoInputs.cache
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\Blog.Core.AssemblyInfo.cs
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\Blog.Core.csproj.CoreCompileInputs.cache
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\Blog.Core.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\refint\Blog.Core.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\Blog.Core.pdb
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Core\obj\Debug\net6.0\ref\Blog.Core.dll
