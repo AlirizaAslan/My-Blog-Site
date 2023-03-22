@@ -10,3 +10,10 @@ C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\obj\Debug\net6.0\Blog.Servic
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\obj\Debug\net6.0\refint\Blog.Service.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\obj\Debug\net6.0\Blog.Service.pdb
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\obj\Debug\net6.0\ref\Blog.Service.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\bin\Debug\net6.0\Blog.Core.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\bin\Debug\net6.0\Blog.Data.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\bin\Debug\net6.0\Blog.Entity.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\bin\Debug\net6.0\Blog.Data.pdb
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\bin\Debug\net6.0\Blog.Entity.pdb
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\bin\Debug\net6.0\Blog.Core.pdb
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Service\obj\Debug\net6.0\Blog.Service.csproj.CopyComplete

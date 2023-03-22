@@ -21,29 +21,29 @@ namespace Blog.Data.Mappings
                 Id = Guid.NewGuid(),
                 Title = "Asp.net core deneme makalesi 1",
                 Content = "asp. net açıklama",
-                ViewCount = 1,
+                ViewCount = 15,                
                 CategoryId = Guid.Parse("D2B8F597-96F8-418B-9819-96C150CAD909"),                 
-                Image= new Image
-                {
-                    Id = Guid.NewGuid(),
-
-                     FileName="images/testimage",
-                     FileType="jpg",
-                     CreatedBy="Admin Test",
-                     CreatedDate = DateTime.Now,
-                     IsDeleted = false
-
-                },
+                
                 ImageId=Guid.Parse("D5A78A10-21A8-49A3-A3B6-E21ADD292023"),
                 CreatedBy="admin test",
                 CreatedDate=DateTime.Now,
                 IsDeleted=false,
-
-
+                ModifiedBy="admin",
+                DeletedBy="False",
             },
             new Article
             {
-
+                Id = Guid.NewGuid(),
+                Title = "vs deneme makalesi 1",
+                Content = "vs açıklama",
+                ViewCount = 1,                
+                CategoryId = Guid.Parse("3C5C732F-92E5-4707-B26E-E3482A60540F"),              
+                ImageId=Guid.Parse("9C6A7406-5073-45C5-B2DE-A56773C220B4"),
+                CreatedBy = "admin test",
+                CreatedDate = DateTime.Now,
+                IsDeleted = false,
+                DeletedBy = "admin",
+                ModifiedBy = "False",
             }
             );
         

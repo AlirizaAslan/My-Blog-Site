@@ -63,8 +63,8 @@ namespace Blog.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
 
                     b.Property<int>("ViewCount")
                         .HasColumnType("int");
@@ -76,6 +76,36 @@ namespace Blog.Data.Migrations
                     b.HasIndex("ImageId");
 
                     b.ToTable("articles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("e0c349aa-9f4d-49cd-ace0-7a44fd94c904"),
+                            CategoryId = new Guid("d2b8f597-96f8-418b-9819-96c150cad909"),
+                            Content = "asp. net açıklama",
+                            CreatedBy = "admin test",
+                            CreatedDate = new DateTime(2023, 3, 20, 16, 4, 18, 407, DateTimeKind.Local).AddTicks(5508),
+                            DeletedBy = "False",
+                            ImageId = new Guid("d5a78a10-21a8-49a3-a3b6-e21add292023"),
+                            IsDeleted = false,
+                            ModifiedBy = "admin",
+                            Title = "Asp.net core deneme makalesi 1",
+                            ViewCount = 15
+                        },
+                        new
+                        {
+                            Id = new Guid("a166a5bd-1790-431f-b449-b5694c6ccad6"),
+                            CategoryId = new Guid("3c5c732f-92e5-4707-b26e-e3482a60540f"),
+                            Content = "vs açıklama",
+                            CreatedBy = "admin test",
+                            CreatedDate = new DateTime(2023, 3, 20, 16, 4, 18, 407, DateTimeKind.Local).AddTicks(5512),
+                            DeletedBy = "admin",
+                            ImageId = new Guid("9c6a7406-5073-45c5-b2de-a56773c220b4"),
+                            IsDeleted = false,
+                            ModifiedBy = "False",
+                            Title = "vs deneme makalesi 1",
+                            ViewCount = 1
+                        });
                 });
 
             modelBuilder.Entity("Blog.Entity.Entities.Category", b =>
@@ -115,6 +145,28 @@ namespace Blog.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("d2b8f597-96f8-418b-9819-96c150cad909"),
+                            CreatedBy = "Admin test",
+                            CreatedDate = new DateTime(2023, 3, 20, 16, 4, 18, 407, DateTimeKind.Local).AddTicks(5708),
+                            DeletedBy = "false",
+                            IsDeleted = false,
+                            ModifiedBy = "admin",
+                            Name = "asp .net core mvc"
+                        },
+                        new
+                        {
+                            Id = new Guid("3c5c732f-92e5-4707-b26e-e3482a60540f"),
+                            CreatedBy = "Admin test",
+                            CreatedDate = new DateTime(2023, 3, 20, 16, 4, 18, 407, DateTimeKind.Local).AddTicks(5711),
+                            DeletedBy = "false",
+                            IsDeleted = false,
+                            ModifiedBy = "admin",
+                            Name = "vs 2022"
+                        });
                 });
 
             modelBuilder.Entity("Blog.Entity.Entities.Image", b =>
@@ -158,6 +210,30 @@ namespace Blog.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ımages");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("d5a78a10-21a8-49a3-a3b6-e21add292023"),
+                            CreatedBy = "Admin Test",
+                            CreatedDate = new DateTime(2023, 3, 20, 16, 4, 18, 407, DateTimeKind.Local).AddTicks(5813),
+                            DeletedBy = "false",
+                            FileName = "images/testimage",
+                            FileType = "jpg",
+                            IsDeleted = false,
+                            ModifiedBy = "admin"
+                        },
+                        new
+                        {
+                            Id = new Guid("9c6a7406-5073-45c5-b2de-a56773c220b4"),
+                            CreatedBy = "Admin Test",
+                            CreatedDate = new DateTime(2023, 3, 20, 16, 4, 18, 407, DateTimeKind.Local).AddTicks(5816),
+                            DeletedBy = "false",
+                            FileName = "images/testimage",
+                            FileType = "jpg",
+                            IsDeleted = false,
+                            ModifiedBy = "admin"
+                        });
                 });
 
             modelBuilder.Entity("Blog.Entity.Entities.Article", b =>

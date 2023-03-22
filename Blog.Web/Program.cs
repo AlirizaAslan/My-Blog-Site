@@ -1,13 +1,21 @@
 using Microsoft.EntityFrameworkCore;
 using Blog.Data.Context;
-
+using Blog.Data.Extensions;
+using Blog.Service.Services;
+using Blog.Service.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+//program.cs kirletmeden extension ile ýrepsort çaðýrdýðýmýzda repostroy de çaðýrýyoruz
+builder.Services.LoadDataLayerExtension(builder.Configuration);
 
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.LoadServiceLayerExtension();
+
+
+// Add services to the container.
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation(); //razor ile viewde run time sýrasýnda deðiþikleri görmemizi saðlýyor
+
+
 
 
 
@@ -29,8 +37,14 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapAreaControllerRoute(
+     name: "Admin",
+     areaName: "Admin",
+     pattern: "Admin/{Controller=Home}/{action=Index}/{id?}");
+    endpoints.MapDefaultControllerRoute();
+});
+
 
 app.Run();

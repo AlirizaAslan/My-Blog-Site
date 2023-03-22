@@ -21,7 +21,7 @@ namespace Blog.Core.Entities
         //alt ve shift ile 1 den fazla satırları seçebiliyorsun
         public virtual Guid Id { get; set; } = Guid.NewGuid();
 
-        public virtual  string CreatedBy { get; set; }
+        public virtual string CreatedBy { get; set; }
                
         public virtual string ModifiedBy { get; set; }
                 
