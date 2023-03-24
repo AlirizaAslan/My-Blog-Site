@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JIpApImV9HozdQo4Oo3hv+LSzesOvB0xXMIRV7jVdZDHX1eQ686N03OSjeBgbgM8/9QMwbcC8aPINhXTegvYDQ==",
+  "dgSpecHash": "+bMGhW7ueH65dlKDS7pW4hgZRrNnIThgNQZMr0rqJ+fcLdHPZMVrHTJO+QlL1SX3yGxSEfGjueKr4mQ0vK6vKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\Blog.Web.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "C:\\Users\\mucur\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\mucur\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.15\\microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
+    "C:\\Users\\mucur\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.15\\microsoft.aspnetcore.cryptography.keyderivation.6.0.15.nupkg.sha512",
+    "C:\\Users\\mucur\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.15\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.15.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\6.0.15\\microsoft.aspnetcore.mvc.razor.extensions.6.0.15.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\6.0.15\\microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.15.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.15\\microsoft.aspnetcore.razor.language.6.0.15.nupkg.sha512",
@@ -32,6 +35,8 @@
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
+    "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.15\\microsoft.extensions.identity.core.6.0.15.nupkg.sha512",
+    "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.15\\microsoft.extensions.identity.stores.6.0.15.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\mucur\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",

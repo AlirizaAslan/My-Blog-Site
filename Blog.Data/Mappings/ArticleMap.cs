@@ -30,6 +30,8 @@ namespace Blog.Data.Mappings
                 IsDeleted=false,
                 ModifiedBy="admin",
                 DeletedBy="False",
+                UserId= Guid.Parse("9EE7F3A2-9787-4F52-AF19-11DD788BA40F"),
+
             },
             new Article
             {
@@ -44,6 +46,7 @@ namespace Blog.Data.Mappings
                 IsDeleted = false,
                 DeletedBy = "admin",
                 ModifiedBy = "False",
+                UserId = Guid.Parse("52296E36-52D2-4A53-858C-C884BAA6E4CC"),
             }
             );
         

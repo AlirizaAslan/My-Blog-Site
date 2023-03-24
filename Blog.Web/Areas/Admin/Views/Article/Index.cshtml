@@ -1,0 +1,60 @@
+﻿@using Blog.Entity.VİewModels.Articles;
+@model List<ArticleDtos>
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Makale Yönetimi /</span> Makaleler</h4>
+
+    <!-- Basic Bootstrap Table -->
+    <div class="card">
+        <h5 class="card-header">Table Basic</h5>
+        <div class="table-responsive text-nowrap">
+            <table class="table table-bordered" id="articlesTable" width="100%" collspacig="0">
+                <thead>
+                    <tr>
+                        <th>Başlık</th>
+                        <th>Kategori</th>
+                        <th>Oluşturma tarihi</th>
+                        <th>Oluşturan</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Başlık</th>
+                        <th>Kategori</th>
+                        <th>Oluşturma tarihi</th>
+                        <th>Oluşturan</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </tfoot>
+
+
+
+                <tbody class="table-border-bottom-0">
+
+                    @foreach(var article in Model)
+                    {
+                        <tr name="@article.Id">
+                            <td>@article.Title </td>
+                            <td>@article.Category.Name </td>
+                            <td>@article.CreatedDate </td>
+                            <td>@article.CreatedBy </td>
+                            <td>@(article.IsDeleted ? "aktif değil" : "aktif")</td>
+                            <td></td>
+
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--/ Basic Bootstrap Table -->
+
+    
+</div>
+
+@section Scripts{
+    <script src="~/js/articleIndex.js" type="application/ecmascript"></script>
+}

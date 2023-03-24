@@ -1,5 +1,6 @@
 ﻿using Blog.Core.Entities;
 using Blog.Entity.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Blog.Data.Context
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser,AppRole,Guid,AppUserClaim,AppUserRole,AppUserLogin,AppRoleClaim,AppUserToken>
     {
         public AppDbContext()
         {
@@ -31,7 +32,11 @@ namespace Blog.Data.Context
 
         //model oluşmadan konfigürasyon yapmamızı sağlayacak olan sınıf
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {//her tablo için tek yerden yapmamızı sağlıyor bu kod
+        {
+            
+            base.OnModelCreating(modelBuilder);//migration da hata almamızı engilliyor
+            
+            //her tablo için tek yerden yapmamızı sağlıyor bu kod
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 

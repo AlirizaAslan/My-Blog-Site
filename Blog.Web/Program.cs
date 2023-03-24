@@ -3,6 +3,8 @@ using Blog.Data.Context;
 using Blog.Data.Extensions;
 using Blog.Service.Services;
 using Blog.Service.Extensions;
+using Blog.Entity.Entities;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,12 +13,38 @@ builder.Services.LoadDataLayerExtension(builder.Configuration);
 
 builder.Services.LoadServiceLayerExtension();
 
+builder.Services.AddSession();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation(); //razor ile viewde run time sýrasýnda deðiþikleri görmemizi saðlýyor
 
 
+builder.Services.AddIdentity<AppUser, AppRole>(opt =>
+{
+    opt.Password.RequireNonAlphanumeric = false;
+    opt.Password.RequireLowercase = false;  //küçük harf zorunluluðu
+    opt.Password.RequireUppercase = false; //büyük harf zorunluluðu
 
+}).AddRoleManager<RoleManager<AppRole>>().
+AddEntityFrameworkStores<AppDbContext>().
+AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(config =>
+{
+    config.LoginPath = new PathString("/Admin/Auth/Login");
+    config.LogoutPath = new PathString("/Admin/Auth/Login");
+    config.Cookie = new CookieBuilder
+    {
+        Name = "MyBlog",
+        HttpOnly = true,
+        SameSite = SameSiteMode.Strict,
+        SecurePolicy = CookieSecurePolicy.SameAsRequest  //canlýda alway olaný seç
+    };
+    config.SlidingExpiration = true;
+    config.ExpireTimeSpan = TimeSpan.FromDays(7); //kullanýcý bilgileri 7 gün boyunda kayýtlý kalacak bilgi girmeden direk admin paneline girmek gibi
+    config.AccessDeniedPath = new PathString("/Admin/Auth/AccessDenied");  //yetkisini belirliyoruz 
+});
 
 
 
@@ -33,7 +61,15 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseSession();
+
 app.UseRouting();
+
+
+
+
+app.UseAuthentication();//ilk bu olmalý 
+app.UseAuthorization();//arkasýna bu gelmeli
 
 app.UseAuthorization();
 

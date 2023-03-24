@@ -405,3 +405,8 @@ C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\zh-Hant\Microso
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\obj\Debug\net6.0\Blog.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

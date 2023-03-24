@@ -10,7 +10,7 @@ namespace Blog.Service.Services.Abstractions
 {
     public interface IArticleService
     {
-        Task<List<ArticleDtos>> GetAllArticlesAsync();
+        Task<List<ArticleDtos>> GetAllArticlesWithCategoryNonDeleteAsync();
 
     }
 }
