@@ -7,8 +7,13 @@
 
     <!-- Basic Bootstrap Table -->
     <div class="card">
-        <h5 class="card-header">Table Basic</h5>
-        <div class="table-responsive text-nowrap">
+        <div class="table-responsive text-nowrap m-5">
+        
+        <a class="btn btn-danger mb-3" asp-area="Admin" asp-controller="Article" asp-action="Add">Makale Ekle
+            <i class="bx bx-plus"></i>
+        </a>
+
+        
             <table class="table table-bordered" id="articlesTable" width="100%" collspacig="0">
                 <thead>
                     <tr>
@@ -41,7 +46,10 @@
                             <td>@article.CreatedDate </td>
                             <td>@article.CreatedBy </td>
                             <td>@(article.IsDeleted ? "aktif değil" : "aktif")</td>
-                            <td></td>
+                            <td>
+                                <a class="btn btn-primary btn-sm" data-id="@article.Id" asp-area="Admin" asp-controller="Article" asp-action="Update" asp-route-articleId="@article.Id"><i class="bx bxs-edit"></i></a>
+                                <a class="btn btn-dangers btn-sm" data-id="@article.Id" asp-area="Admin" asp-controller="Article" asp-action="Delete" asp-route-articleId="@article.Id"><i class="bx bxs-minus-circle"></i></a>
+                            </td>
 
                         </tr>
                     }

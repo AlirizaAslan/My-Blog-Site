@@ -9,7 +9,21 @@ namespace Blog.Entity.Entities
 {
     public class Image : EntityBase
     {
-       // public Guid Id { get; set; } hepsini miras alıyoruz tüm sınıflarda ortak id alanı olduğu için
+        private readonly string filename;
+        private readonly string filetype;
+
+        public Image()
+        {
+        }
+        public Image(string filename,string filetype)
+        {
+            this.filename = filename;
+            this.filetype = filetype;
+        }
+
+
+
+        // public Guid Id { get; set; } hepsini miras alıyoruz tüm sınıflarda ortak id alanı olduğu için
         public string FileName { get; set; }
 
         public string FileType { get; set; }

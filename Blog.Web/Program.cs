@@ -5,6 +5,7 @@ using Blog.Service.Services;
 using Blog.Service.Extensions;
 using Blog.Entity.Entities;
 using Microsoft.AspNetCore.Identity;
+using NToastNotify;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,12 @@ builder.Services.AddSession();
 
 
 // Add services to the container.
-builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation(); //razor ile viewde run time sýrasýnda deðiþikleri görmemizi saðlýyor
+builder.Services.AddControllersWithViews().AddNToastNotifyToastr(new NToastNotify.ToastrOptions
+{
+    PositionClass=ToastPositions.TopRight, //sað tarfata çýkacak
+    TimeOut=3000  //3 saniye duracak
+    
+}).AddRazorRuntimeCompilation(); //razor ile viewde run time sýrasýnda deðiþikleri görmemizi saðlýyor
 
 
 builder.Services.AddIdentity<AppUser, AppRole>(opt =>
@@ -57,6 +63,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseNToastNotify();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

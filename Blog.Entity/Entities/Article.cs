@@ -11,13 +11,31 @@ namespace Blog.Entity.Entities
 { //classın ismi sql tablosundaki tablonun ismi ile aynı olmalı
     public class Article : EntityBase
     {
-        
+        private readonly Guid imageId;
+
+        public Article()
+        {
+        }
+
+        public Article(string title,string content,Guid UserId,string creatdBy, Guid categoryId,Guid imageId)
+        {
+            Title = title;
+            Content = content;
+            this.UserId = UserId;
+            CategoryId = categoryId;
+            this.imageId = imageId;
+            CreatedBy = creatdBy;
+           
+
+
+        }
+
 
         public string Title { get; set; }
 
         public string Content { get; set; }
 
-        public int ViewCount { get; set; }
+        public int ViewCount { get; set; } = 0;
 
 
         public Guid CategoryId { get; set; }

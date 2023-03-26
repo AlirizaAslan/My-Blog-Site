@@ -16,8 +16,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\mucur\source\repos\MyBlogSite\Blog.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/mucur/source/repos/MyBlogSite/Blog.Web/Areas/Admin/Views/Article/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXJ0aWNsZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mucur/source/repos/MyBlogSite/Blog.Web/Areas/Admin/Views/Article/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXJ0aWNsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mucur/source/repos/MyBlogSite/Blog.Web/Areas/Admin/Views/Article/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXJ0aWNsZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mucur/source/repos/MyBlogSite/Blog.Web/Areas/Admin/Views/Auth/Login.cshtml]

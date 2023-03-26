@@ -1,4 +1,6 @@
-﻿using Blog.Entity.Entities;
+﻿using AutoMapper;
+using Blog.Data.UnitOfWorks;
+using Blog.Entity.Entities;
 using Blog.Entity.VİewModels.Articles;
 using System;
 using System.Collections.Generic;
@@ -12,5 +14,14 @@ namespace Blog.Service.Services.Abstractions
     {
         Task<List<ArticleDtos>> GetAllArticlesWithCategoryNonDeleteAsync();
 
+        Task<ArticleDtos> GetArticlesWithCategoryNonDeleteAsync(Guid articleId);
+
+
+
+        Task<string> UpdateArticleAsync(ArticleUpdateDto articleUpdateDto);
+        Task<string> SafeDeleteArticleAsync(Guid articleId);
+
+
+        Task CreateArticleAsync(ArticleAddDto articleAddDto);
     }
 }
