@@ -20,6 +20,8 @@ namespace Blog.Entity.VİewModels.Articles
      
         public DateTime CreatedDate { get; set; }
 
+        public Image Image { get; set; }
+
         public string CreatedBy { get; set; }
 
         public bool IsDeleted { get; set; }

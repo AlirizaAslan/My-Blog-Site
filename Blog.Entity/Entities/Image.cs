@@ -1,4 +1,5 @@
 ﻿using Blog.Core.Entities;
+using Blog.Entity.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,17 +10,20 @@ namespace Blog.Entity.Entities
 {
     public class Image : EntityBase
     {
-        private readonly string filename;
-        private readonly string filetype;
+      
 
-        public Image()
+		public Image()
         {
         }
-        public Image(string filename,string filetype)
+
+
+        public Image(string filename,string filetype,string createdBy)
         {
-            this.filename = filename;
-            this.filetype = filetype;
-        }
+           FileName = filename;
+            FileType = filetype;
+            CreatedBy = createdBy;
+            
+		}
 
 
 
@@ -27,6 +31,8 @@ namespace Blog.Entity.Entities
         public string FileName { get; set; }
 
         public string FileType { get; set; }
+
+        
 
         public ICollection<Article> Articles { get; set; }
 

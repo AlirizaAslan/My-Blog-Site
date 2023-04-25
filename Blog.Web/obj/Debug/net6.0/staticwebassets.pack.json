@@ -21,8 +21,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resim2_973.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\resim2_973.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resim_963.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\resim_963.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resimdeneme_240.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\resimdeneme_240.jpg"
+    },
+    {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\articleIndex.js",
       "PackagePath": "staticwebassets\\js\\articleIndex.js"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\categoryAdd.js",
+      "PackagePath": "staticwebassets\\js\\categoryAdd.js"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\categoryIndex.js",
+      "PackagePath": "staticwebassets\\js\\categoryIndex.js"
     },
     {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\site.js",

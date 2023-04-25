@@ -402,7 +402,6 @@ C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\ru\Microsoft.Co
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\obj\Debug\net6.0\Blog.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -417,3 +416,4 @@ C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Microsoft.AspNe
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\bin\Debug\net6.0\NToastNotify.dll
+C:\Users\mucur\source\repos\MyBlogSite\Blog.Web\obj\Debug\net6.0\Blog.Web.MvcApplicationPartsAssemblyInfo.cs

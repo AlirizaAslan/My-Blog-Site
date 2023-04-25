@@ -1,4 +1,5 @@
-﻿using Blog.Entity.VİewModels.Categories;
+﻿using Blog.Entity.Entities;
+using Blog.Entity.VİewModels.Categories;
 using Blog.Service.Services.Concrete;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,10 @@ namespace Blog.Service.Services.Abstractions
 {
     public interface  ICategoryService
     {
-        public Task<List<CategoryDto>> GetAllCategoriesNonDeleted();
+        Task<List<CategoryDto>> GetAllCategoriesNonDeleted();
+        Task CreateCategoryAsync(CategoryAddDto categoryAddDto);
+        Task<Category> GetCategoryByGuid(Guid Id);
+        Task<string> UpdateCategoryAsync(CategoryUpdateDto categoryUpdateDto);
+        Task<string> SafeDeleteArticleAsync(Guid categoryId);
     }
 }

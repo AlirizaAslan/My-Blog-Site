@@ -52,7 +52,6 @@ namespace Blog.Data.Mappings
 
            var superadmin=new AppUser
             {
-
                 Id = Guid.Parse("9EE7F3A2-9787-4F52-AF19-11DD788BA40F"),
                 UserName = "superadmin@gmail.com",
                 NormalizedUserName = "SUPERADMIN@GMAIL.COM",
@@ -83,10 +82,8 @@ namespace Blog.Data.Mappings
                     EmailConfirmed = true,
                     SecurityStamp = Guid.NewGuid().ToString(),
                     ImageId = Guid.Parse("D5A78A10-21A8-49A3-A3B6-E21ADD292023"),
-
                 };
             admin.PasswordHash = CreatePasswordHash(admin, "123456");
-
             builder.HasData(superadmin,admin);
         }
 
@@ -95,7 +92,6 @@ namespace Blog.Data.Mappings
         private string CreatePasswordHash(AppUser user,string password)
         {
             var PaswordHasher=new PasswordHasher<AppUser>();
-
             return PaswordHasher.HashPassword(user, password);
         }
     }

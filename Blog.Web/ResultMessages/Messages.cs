@@ -19,5 +19,24 @@
                 return $"{articleTitle} başlıklı makale başarıyla Silinmiştir.";
             }
         }
+
+
+        public static class Category
+        {//static class olduğu içi new lemeye gerek yok
+            public static string Add(string categoryName)
+            {
+                return $"{categoryName} başlıklı kategori başarıyla eklenmiştir.";
+            }
+
+            public static string Update(string categoryName)
+            {
+                return $"{categoryName} başlıklı kategori başarıyla güncellenmiştir.";
+            }
+
+            public static string Delete(string categoryName)
+            {
+                return $"{categoryName} başlıklı kategori başarıyla Silinmiştir.";
+            }
+        }
     }
 }

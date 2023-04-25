@@ -16,7 +16,7 @@ namespace Blog.Data.Repositories.Concretes
         private readonly AppDbContext dbContext;
 
         public Repository(AppDbContext dbContext)
-       {
+        {
             this.dbContext = dbContext;
         }
 

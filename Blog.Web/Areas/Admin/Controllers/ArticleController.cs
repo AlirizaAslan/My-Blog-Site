@@ -80,7 +80,7 @@ namespace Blog.Web.Areas.Admin.Controllers
             //https://www.youtube.com/watch?v=pWjNMhoYglw&list=PLrSCwxkucNmxFrrAsGm14Z-5Cu52MKrNr&index=17  dakka 22  
             var article = await articleService.GetArticlesWithCategoryNonDeleteAsync(articleId);
 
-            var categories=await categoryService.GetAllCategoriesNonDeleted();
+             var categories = await categoryService.GetAllCategoriesNonDeleted();
 
             var articleUpdateDto= mapper.Map<ArticleUpdateDto>(article);
 
