@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+ using Microsoft.EntityFrameworkCore;
 using Blog.Data.Context;
 using Blog.Data.Extensions;
 using Blog.Service.Services;
@@ -6,6 +6,7 @@ using Blog.Service.Extensions;
 using Blog.Entity.Entities;
 using Microsoft.AspNetCore.Identity;
 using NToastNotify;
+using Blog.Service.Describers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +34,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(opt =>
     opt.Password.RequireUppercase = false; //büyük harf zorunluluðu
 
 }).AddRoleManager<RoleManager<AppRole>>().
+AddErrorDescriber<CustomIdentityErrorDescriber>().
 AddEntityFrameworkStores<AppDbContext>().
 AddDefaultTokenProviders();
 

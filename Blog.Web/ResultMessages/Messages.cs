@@ -18,6 +18,11 @@
             {
                 return $"{articleTitle} başlıklı makale başarıyla Silinmiştir.";
             }
+
+            public static string UndoDelete(string articleTitle)
+            {
+                return $"{articleTitle} başlıklı makale başarıyla geri alınmıştır.";
+            }
         }
 
 
@@ -36,6 +41,30 @@
             public static string Delete(string categoryName)
             {
                 return $"{categoryName} başlıklı kategori başarıyla Silinmiştir.";
+            }
+
+            public static string UndoDelete(string categoryName)
+            {
+                return $"{categoryName} başlıklı kategori başarıyla geri alınmıştır.";
+            }
+        }
+
+
+        public static class User
+        {//static class olduğu içi new lemeye gerek yok
+            public static string Add(string userName)
+            {
+                return $"{userName} email adresli kullanıcı başarıyla eklenmiştir.";
+            }
+
+            public static string Update(string userName)
+            {
+                return $"{userName} email adresli kullanıcı başarıyla güncellenmiştir.";
+            }
+
+            public static string Delete(string userName)
+            {
+                return $"{userName} email adresli kullanıcı başarıyla Silinmiştir.";
             }
         }
     }

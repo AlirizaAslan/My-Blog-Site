@@ -35,6 +35,12 @@ namespace Blog.Web.Areas.Admin.Controllers
             return View(categories);
         }
 
+        public async Task<IActionResult> DeletedCategory()
+        {
+            var categories = await categoryService.GetAllCategoriesDeleted();
+            return View(categories);
+        }
+
         [HttpGet]
         public IActionResult Add()
         {
@@ -131,5 +137,14 @@ namespace Blog.Web.Areas.Admin.Controllers
 
         }
 
+        public async Task<IActionResult> UndoDelete(Guid categoryId)
+        {
+            var name = await categoryService.UndoDeleteArticleAsync(categoryId);
+
+            toast.AddSuccessToastMessage(Messages.Category.UndoDelete(name), new ToastrOptions() { Title = "işlem başarılı" });
+
+            return RedirectToAction("Index", "Category", new { Area = "Admin" });
+
+        }
     }
 }

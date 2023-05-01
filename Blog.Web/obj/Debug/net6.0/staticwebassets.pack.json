@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_628.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\AlirizaAslan_628.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_891.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\AlirizaAslan_891.jpg"
+    },
+    {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resim2_973.jpg",
       "PackagePath": "staticwebassets\\images\\article-images\\resim2_973.jpg"
     },
@@ -31,6 +39,10 @@
     {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resimdeneme_240.jpg",
       "PackagePath": "staticwebassets\\images\\article-images\\resimdeneme_240.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\UserIndex.js",
+      "PackagePath": "staticwebassets\\js\\UserIndex.js"
     },
     {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\articleIndex.js",

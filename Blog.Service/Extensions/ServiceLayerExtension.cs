@@ -28,6 +28,7 @@ namespace Blog.Service.Extensions
 
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IArticleService, ArticleService>();
+            services.AddScoped<IUserService, UserService>();
             services.AddScoped<IImageHelper, ImageHelper>();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>(); //Ihttp  http tipine dönüştürülüyor

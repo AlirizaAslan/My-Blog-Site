@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lBIZmyMyrz+bn/SakB8xIpIR7fGrW9A+cCnYnVb3mY8=",
+  "Hash": "evi7kod38rs8Zf9L6OxBVPNtZK6aW3vaqBp/TT121PU=",
   "Source": "Blog.Web",
   "BasePath": "_content/Blog.Web",
   "Mode": "Default",
@@ -153,6 +153,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_628.jpg",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/article-images/AlirizaAslan_628.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\AlirizaAslan_628.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_891.jpg",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/article-images/AlirizaAslan_891.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\AlirizaAslan_891.jpg"
+    },
+    {
       "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resim_963.jpg",
       "SourceId": "Blog.Web",
       "SourceType": "Discovered",
@@ -270,6 +304,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\UserIndex.js",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "js/UserIndex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\UserIndex.js"
     },
     {
       "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

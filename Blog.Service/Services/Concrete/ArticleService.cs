@@ -98,13 +98,12 @@ namespace Blog.Service.Services.Concrete
 
             }
 
-            article.Title = articleUpdateDto.Title;
-            article.Content = articleUpdateDto.Content;
-            article.CategoryId = articleUpdateDto.CategoryId;
+            //article.Title = articleUpdateDto.Title;
+            //article.Content = articleUpdateDto.Content;
+            //article.CategoryId = articleUpdateDto.CategoryId;
+            //article.ModifiedBy=useremail;
             article.ModifiedDate = DateTime.Now;
-            article.ModifiedBy=useremail;
-
-           // mapper.Map<ArticleUpdateDto>(article); mapper ile tek satırla yapabilirsin 
+           mapper.Map(articleUpdateDto,article); //mapper ile tek satırla yapabilirsin 
 
             await unitOfWork.GetRepository<Article>().UpdateAsync(article);
 
@@ -134,6 +133,31 @@ namespace Blog.Service.Services.Concrete
 
         }
 
+        public async Task<List<ArticleDtos>> GetAllArticlesWithCategoryDeletedAsync()
+        {
+            var articles = await unitOfWork.GetRepository<Article>().GetAllAsycn(x => x.IsDeleted, x => x.Category);
+            var map = mapper.Map<List<ArticleDtos>>(articles);
+            return map;
+        }
 
+        public async Task<string> UndoDeleteArticleAsync(Guid articleId)
+        {
+            var article = await unitOfWork.GetRepository<Article>().GetByGuidAsync(articleId);
+            var useremail = _user.GetLoggerInUserEmail();
+
+
+
+            article.IsDeleted = false;
+            article.DeletedDate = null;
+            article.DeletedBy = null;
+
+            await unitOfWork.GetRepository<Article>().UpdateAsync(article);
+
+
+            await unitOfWork.SaveAsync();
+
+
+            return article.Title;
+        }
     }
 }
