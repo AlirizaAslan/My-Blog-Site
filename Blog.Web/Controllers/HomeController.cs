@@ -3,17 +3,20 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Blog.Service.Services.Abstractions;
 using Blog.Service.Services.Concrete;
+using Newtonsoft.Json;
 
 namespace Blog.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IDashboardService dashboardService;
         private readonly IArticleService articleService;
 
-        public HomeController(ILogger<HomeController> logger,IArticleService articleService )
+        public HomeController(ILogger<HomeController> logger,IDashboardService dashboardService ,IArticleService articleService )
         {
             _logger = logger;
+            this.dashboardService = dashboardService;
             this.articleService = articleService;
         }
 
@@ -23,6 +26,7 @@ namespace Blog.Web.Controllers
             return View(article);
         }
 
+      
         public IActionResult Privacy()
         {
             return View();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "evi7kod38rs8Zf9L6OxBVPNtZK6aW3vaqBp/TT121PU=",
+  "Hash": "4gCxgDirZbd5yFEQ/qUeMhv3zN9qYPIW0/FM3erHAwc=",
   "Source": "Blog.Web",
   "BasePath": "_content/Blog.Web",
   "Mode": "Default",
@@ -170,6 +170,23 @@
       "OriginalItemSpec": "wwwroot\\images\\article-images\\AlirizaAslan_628.jpg"
     },
     {
+      "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_724.jpg",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/article-images/AlirizaAslan_724.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\AlirizaAslan_724.jpg"
+    },
+    {
       "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_891.jpg",
       "SourceId": "Blog.Web",
       "SourceType": "Discovered",
@@ -185,6 +202,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\article-images\\AlirizaAslan_891.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\Cem2keskin2_240.jpg",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/article-images/Cem2keskin2_240.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\Cem2keskin2_240.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\chart_550.jpg",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "images/article-images/chart_550.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\chart_550.jpg"
     },
     {
       "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resim_963.jpg",
@@ -287,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\categoryIndex.js"
+    },
+    {
+      "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\dashboardIndex.js",
+      "SourceId": "Blog.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\",
+      "BasePath": "_content/Blog.Web",
+      "RelativePath": "js/dashboardIndex.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dashboardIndex.js"
     },
     {
       "Identity": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\site.js",

@@ -25,8 +25,20 @@
       "PackagePath": "staticwebassets\\images\\article-images\\AlirizaAslan_628.jpg"
     },
     {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_724.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\AlirizaAslan_724.jpg"
+    },
+    {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\AlirizaAslan_891.jpg",
       "PackagePath": "staticwebassets\\images\\article-images\\AlirizaAslan_891.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\Cem2keskin2_240.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\Cem2keskin2_240.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\chart_550.jpg",
+      "PackagePath": "staticwebassets\\images\\article-images\\chart_550.jpg"
     },
     {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\images\\article-images\\resim2_973.jpg",
@@ -55,6 +67,10 @@
     {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\categoryIndex.js",
       "PackagePath": "staticwebassets\\js\\categoryIndex.js"
+    },
+    {
+      "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\dashboardIndex.js",
+      "PackagePath": "staticwebassets\\js\\dashboardIndex.js"
     },
     {
       "Id": "C:\\Users\\mucur\\source\\repos\\MyBlogSite\\Blog.Web\\wwwroot\\js\\site.js",
